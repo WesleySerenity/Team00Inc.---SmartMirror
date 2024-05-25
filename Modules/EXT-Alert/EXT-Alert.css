@@ -1,0 +1,128 @@
+/** Alert **/
+#EXT-Alert {
+  z-index: 100000;
+  bottom:auto;
+  box-sizing:border-box;
+  font-family:"Roboto",sans-serif;
+  font-size:40px;
+  -webkit-font-smoothing:antialiased;
+  position:fixed;
+  overflow:hidden;
+  width:100%;
+  top:0;
+  left:0;
+}
+
+#EXT-Alert.hidden {
+  display: none;
+}
+
+#EXT-Alert-popout div {
+  font-family:'Roboto',arial,sans-serif
+}
+
+#EXT-Alert-bar {
+  display:flex;
+  background-color: rgba(33,33,33,.99);
+  height:144px;
+  padding: 0px 30px 0 30px;
+  width:100%;
+  box-sizing:border-box;
+  white-space:nowrap;
+}
+
+.EXT-Alert-response {
+  color:#ffffff;
+  font-size:30px;
+  margin:auto 20px;
+  text-overflow: ellipsis;
+  overflow: auto;
+}
+
+.EXT-Alert-icon {
+  margin-left: -70px;
+  Zoom: 35%;
+}
+
+#EXT-Alert-Displayer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#EXT-Alert-Sender {
+  align-self: flex-end;
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+  color: darkgray;
+  margin-top: -30px;
+}
+
+/* sweetAlert CSS */
+
+body.swal2-shown > [aria-hidden='true'] {
+  transition: 0.1s filter;
+  filter: blur(3px);
+}
+
+.swal2-container {
+  z-index: 100000 !important;
+}
+
+.AlertProgressColor {
+  background-color: #3cba54;
+  height: 1px;
+}
+
+.AlertProgressColorError {
+  background-color: #db3236;
+  height: 1px;
+}
+
+.AlertProgressColorWarning {
+  background-color: #FFA500;
+  height: 1px;
+}
+
+.AlertFooterColor {
+  color: darkgray;
+}
+
+.AlertMessageContainer {
+  display: inline-flex;
+  align-items: center;
+}
+
+.AlertMessageIcon {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    aspect-ratio: auto;
+}
+
+/* alertify css */
+
+.alertify-notifier {
+  z-index: 100000 !important;
+}
+
+.alertify-notifier .ajs-message {
+  width: max-content !important;
+}
+
+.alertify-notifier .ajs-message.ajs-warning {
+  background: rgba(244, 194, 13, .95) !important;
+}
+
+.alertify-notifier .ajs-message.ajs-error {
+  background: rgba(219, 50, 54, .95) !important;
+}
+
+.alertify-notifier .ajs-message.ajs-success {
+  background: rgba(60, 186, 84, .95) !important;
+}
+
+.alertify-notifier .ajs-message.ajs-information {
+  background-color: rgba(72, 133, 237, .95) !important;
+}
